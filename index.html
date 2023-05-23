@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Commerce Website</title>
+  <title>Foting Shoop</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <style>
@@ -11,12 +11,30 @@
       max-height: 200px;
       object-fit: cover;
     }
+	body {
+		background-image: url('jpg/logo.png');
+		background-attachment: center;
+		background-size: auto;
+	}
+    .fade-in {
+      animation: fade-in 0.5s ease-in-out;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
   </style>
 </head>
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">E-Commerce</a>
+    <a class="navbar-brand" href="#">Foting Shoop</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,6 +46,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Products</a>
         </li>
+		<li class="nav-item">
+          <a class="nav-link" href="pages/about.html">About Us</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#" onclick="showCart()">Cart (<span id="cartItems">0</span>)</a>
         </li>
@@ -36,10 +57,11 @@
   </nav>
 
   <div class="container mt-4">
-    <h1 class="text-center">Welcome to our E-Commerce Website!</h1>
-    <div class="row mt-4">
+    <h1 class="text-center">Welcome to Foting Shoop!</h1>
+	<h3 class="text-center">Check our bestsellers!</h3>
+    <div class="row mt-4" id="productRow">
       <div class="col-md-4 mb-4">
-        <div class="card">
+        <div class="card fade-in">
           <img src="jpg/01.jpg" class="card-img-top" alt="Product 1">
           <div class="card-body">
             <p class="card-text">NIKE DUNK LOW RETRO</p>
@@ -49,7 +71,7 @@
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card">
+        <div class="card fade-in">
           <img src="jpg/02.jpg" class="card-img-top" alt="Product 2">
           <div class="card-body">
             <h5 class="card-title">2 999 Kč</h5>
@@ -59,7 +81,7 @@
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card">
+        <div class="card fade-in">
           <img src="jpg/03.jpg" class="card-img-top" alt="Product 3">
           <div class="card-body">
             <p class="card-text">NIKE AIR FORCE 1 LOW RETRO</p>
@@ -70,6 +92,8 @@
       </div>
     </div>
   </div>
+ </div>
+
 
   <!-- Shopping Cart Modal -->
   <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
@@ -95,8 +119,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  
+
   <script src="js/shopingcart.js"></script>
 </body>
 </html>
-
