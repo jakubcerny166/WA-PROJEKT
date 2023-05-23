@@ -1,0 +1,24 @@
+  img.card-img-top {
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .fade-in {
+      animation: fade-in 0.5s ease-in-out;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; 
+  background-color: #f8f9fa;
+  text-align: center;
+}
