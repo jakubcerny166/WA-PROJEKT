@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -29,6 +28,9 @@
 		<li class="nav-item">
           <a class="nav-link" href="login.html">Login</a>
         </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#" onclick="showCart()">Cart (<span id="cartItems">0</span>)</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -45,7 +47,26 @@
         <p class="fade-in">Moreover, this webpage fosters a sense of community and collaboration. Connect with fellow sneaker enthusiasts, share your creations, and gain inspiration from others. Engage in conversations, join contests, and become a part of a vibrant community that celebrates individuality and creativity.</p>
         <p class="fade-in">Whether you're an artist seeking a canvas for your creations, a trendsetter in pursuit of unique fashion statements, or simply someone who wants to walk their own path, this webpage is here to fulfill your desires. It transcends the boundaries of conventional footwear and opens up a world of limitless possibilities.</p>
         <p class="fade-in">So, my friends, I invite you to embark on this incredible journey of self-expression. Step into the realm of custom sneakers and let your feet tell your story. Unleash your creativity, embrace your individuality, and leave a lasting impression with every step you take.</p>
-        <p class="fade-in">Thank you.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul id="cartItemList"></ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-danger" onclick="clearCart()">Pay</button>
+        </div>
       </div>
     </div>
   </div>
@@ -53,6 +74,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <script src="../js/script.js"></script>
 
  <footer class="footer">
     <div class="container">

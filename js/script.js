@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 let cartItems = [];
 
-// Load cart items from localStorage on page load
+//load cart items from localStorage when page loads
 $(document).ready(function() {
   let savedCartItems = localStorage.getItem('cartItems');
   cartItems = savedCartItems ? JSON.parse(savedCartItems) : [];
@@ -62,3 +62,9 @@ function updateCartItemsCount() {
 function saveCartItemsToStorage() {
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
 }
+
+ function clearCart() {
+    cartItems = []; 
+    updateCartItemsCount(); 
+    showCart(); 
+  }
