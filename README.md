@@ -17,7 +17,7 @@ XAMPP Server
 Notepad++
 
 4. Jak nainstalovat a spustit
--stáhne se celá repositoř https://github.com/](https://github.com/jakubcerny166/WA-PROJEKT/tree/main
+-stáhneme celou repositoř https://github.com/jakubcerny166/WA-PROJEKT/tree/main
 -spustíme si xampp server a v něm zapneme Apache a MySQL
 - na disku C: najdeme složku "xampp" a v ní "htdocs", uvnitř vytvoříme složku s názvem "web" a vložíme do ní stáhnutý a extrahovaný projekt 
 -otevřeme webový prohlížeč a do lišty napišme localhost/web
