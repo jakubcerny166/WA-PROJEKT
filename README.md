@@ -8,7 +8,7 @@ Stránka obsahuje:
 index page, about page, products page, login a register page
 
 3. Použité technologie
-HTML
+- HTML
 CSS
 JS
 Bootstrap
