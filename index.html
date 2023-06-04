@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foting Shoop</title>
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
     body {
       background-image: url('jpg/logo.png');
-      background-position: center center;
+      background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: auto;
@@ -86,7 +85,7 @@
 			<h2 class="text-center">Lighten up your day with some joke!</h2>
 			<div id="jokeContent"></div>
 			<div class="text-center mt-2">
-			<button class="btn btn-primary" onclick="fetchJoke()">Get Joke</button>
+			<button class="btn btn-primary" onclick="fetchJoke()">Tell me</button>
 		</div>
 		</div>
 
@@ -104,7 +103,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		  <button type="button" class="btn btn-danger" onclick="clearCart()">Pay</button>
+		  <button type="button" class="btn btn-primary" onclick="clearCart()">Pay</button>
         </div>
       </div>
     </div>
