@@ -3,32 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foting Shoop</title>
+  <title>Product Page</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-  body {
-		background-image: url('jpg/logo.png');
-		background-attachment: center;
-		background-size: auto;
-	}
-	</style>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Foting Shoop</a>
+    <a class="navbar-brand" href="#">E-Commerce</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/products.html">Products</a>
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Products</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="pages/about.html">About Us</a>
@@ -40,17 +33,17 @@
     </div>
   </nav>
 
-  <div class="container mt-4">
+    <div class="container mt-4">
     <h1 class="text-center">Welcome to Foting Shoop!</h1>
 	<h3 class="text-center">Check our bestsellers!</h3>
     <div class="row mt-4" id="productRow">
       <div class="col-md-4 mb-4">
         <div class="card fade-in">
-          <img src="jpg/01.jpg" class="card-img-top" alt="Product 1">
+          <img src="../jpg/01.jpg" class="card-img-top" alt="Product 1">
           <div class="card-body">
             <p class="card-text">NIKE DUNK LOW RETRO</p>
 			<h5 class="card-title">3 499 Kč</h5>
-            <a href="#" class="btn btn-primary" onclick="addToCart('NIKE DUNK LOW RETRO', 'jpg/01.jpg')">Add to Cart</a>
+            <a href="#" class="btn btn-primary" onclick="addToCart('NIKE DUNK LOW RETRO', '../jpg/01.jpg')">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -76,15 +69,6 @@
       </div>
     </div>
   </div>
- 
- <div id="jokeContainer" class="mt-4">
-			<h2 class="text-center">Lighten up your day with some joke!</h2>
-			<div id="jokeContent"></div>
-			<div class="text-center mt-2">
-			<button class="btn btn-primary" onclick="fetchJoke()">Get Joke</button>
-		</div>
-		</div>
-
 
   <!-- Shopping Cart Modal -->
   <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
@@ -110,10 +94,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-  <script src="js/script.js"></script>
-   <script src="js/jokeapi.js"></script>
-  <footer class="footer">
+  
+    <script src="../js/script.js"></script>
+ <footer class="footer">
     <div class="container">
       <p>&copy; 2023 Jakub Černý. All rights reserved.</p>
     </div>
