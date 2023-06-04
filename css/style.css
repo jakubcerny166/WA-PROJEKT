@@ -14,11 +14,36 @@
         opacity: 1;
       }
     }
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px; 
-  background-color: #f8f9fa;
-  text-align: center;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f8f9fa;
+   color: gray;
+   text-align: center;
 }
+
+#jokeContainer {
+  position: relative;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#jokeContainer h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#jokeContent {
+  margin-top: 10px;
+}
+
