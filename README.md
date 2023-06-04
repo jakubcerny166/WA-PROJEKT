@@ -1,5 +1,5 @@
 1. Název
-Foting Shoop
+- Foting Shoop
 
 2. Funkce webové stránky
 - Stránka simulující online obchod s obuví
