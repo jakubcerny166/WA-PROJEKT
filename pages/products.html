@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      background-image: url('../jpg/logo.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: auto;
+    }
+	</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Foting Shoop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="showCart()">Cart (<span id="cartItems">0</span>)</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container mt-4">
+    <h1 class="text-center">Check our products!</h1>
+	<h3 class="text-center">Limited pieces!</h3>
+    <div class="row mt-4" id="productRow">
+      <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/04.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">ADIDAS NMD S1</p>
+			<h5 class="card-title">3 995 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('ADIDAS NMD S1', '../jpg/04.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/05.jpg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+			<p class="card-text">VANS VAULT OG STYLE 36 LX</p>
+            <h5 class="card-title">2 176 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('VANS VAULT OG STYLE 36 LX', '../jpg/05.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/06.jpg" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <p class="card-text">ASICS X ANDERSSON BELL GEL-SONOMA 15-50</p>
+			<h5 class="card-title">3 791 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('ASICS X ANDERSSON BELL GEL-SONOMA 15-50', '../jpg/06.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/07.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">ON M CLOUD 5 COAST</p>
+			<h5 class="card-title">4 290 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('ON M CLOUD 5 COAST', '../jpg/07.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/08.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">VANS VAULT AUTHENTIC VR3 PW LX</p>
+			<h5 class="card-title">2 176 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('VANS VAULT AUTHENTIC VR3 PW LX', '../jpg/08.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/09.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">VANS VAULT HALF CAB CP VR3 LX</p>
+			<h5 class="card-title">2 960 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('VANS VAULT HALF CAB CP VR3 LX', '../jpg/09.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/10.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">ADIDAS ADILETTE 22</p>
+			<h5 class="card-title">1 699 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('ADIDAS ADILETTE 22', '../jpg/10.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/11.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">VANS VAULT OG CLASSIC SLIP-ON LX</p>
+			<h5 class="card-title">1 500 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('VANS VAULT OG CLASSIC SLIP-ON LX', '../jpg/11.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/12.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">COLUMBIA FLOW MORRISON™ OUTDRY™</p>
+			<h5 class="card-title">2 700 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('COLUMBIA FLOW MORRISON™ OUTDRY™', '../jpg/12.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul id="cartItemList"></ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary" onclick="clearCart()">Pay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+    <script src="../js/script.js"></script>
+ <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Jakub Černý. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
