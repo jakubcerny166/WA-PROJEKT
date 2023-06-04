@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-  body {
-		background-image: url('jpg/logo.png');
-		background-attachment: center;
-		background-size: auto;
-	}
+    body {
+      background-image: url('jpg/logo.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: auto;
+    }
 	</style>
 </head>
 <body>
@@ -33,6 +35,9 @@
 		<li class="nav-item">
           <a class="nav-link" href="pages/about.html">About Us</a>
         </li>
+		<li class="nav-item">
+          <a class="nav-link" href="pages/login.html">Login</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#" onclick="showCart()">Cart (<span id="cartItems">0</span>)</a>
         </li>
@@ -42,7 +47,7 @@
 
   <div class="container mt-4">
     <h1 class="text-center">Welcome to Foting Shoop!</h1>
-	<h3 class="text-center">Check our bestsellers!</h3>
+	<h3 class="text-center">Check our bestsellers this week!</h3>
     <div class="row mt-4" id="productRow">
       <div class="col-md-4 mb-4">
         <div class="card fade-in">

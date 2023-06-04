@@ -7,11 +7,20 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      background-image: url('../jpg/logo.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: auto;
+    }
+	</style>
 </head>
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">E-Commerce</a>
+    <a class="navbar-brand" href="#">Foting Shoop</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,7 +33,10 @@
           <a class="nav-link" href="#">Products</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="pages/about.html">About Us</a>
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" onclick="showCart()">Cart (<span id="cartItems">0</span>)</a>
@@ -34,36 +46,96 @@
   </nav>
 
     <div class="container mt-4">
-    <h1 class="text-center">Welcome to Foting Shoop!</h1>
-	<h3 class="text-center">Check our bestsellers!</h3>
+    <h1 class="text-center">Check our products!</h1>
+	<h3 class="text-center">Limited pieces!</h3>
     <div class="row mt-4" id="productRow">
       <div class="col-md-4 mb-4">
         <div class="card fade-in">
-          <img src="../jpg/01.jpg" class="card-img-top" alt="Product 1">
+          <img src="../jpg/04.jpg" class="card-img-top" alt="Product 1">
           <div class="card-body">
-            <p class="card-text">NIKE DUNK LOW RETRO</p>
-			<h5 class="card-title">3 499 Kč</h5>
-            <a href="#" class="btn btn-primary" onclick="addToCart('NIKE DUNK LOW RETRO', '../jpg/01.jpg')">Add to Cart</a>
+            <p class="card-text">ADIDAS NMD S1</p>
+			<h5 class="card-title">3 995 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('ADIDAS NMD S1', '../jpg/04.jpg')">Add to Cart</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card fade-in">
-          <img src="jpg/02.jpg" class="card-img-top" alt="Product 2">
+          <img src="../jpg/05.jpg" class="card-img-top" alt="Product 2">
           <div class="card-body">
-            <h5 class="card-title">2 999 Kč</h5>
-            <p class="card-text">ADIDAS SAMBA OG</p>
-            <a href="#" class="btn btn-primary" onclick="addToCart('ADIDAS SAMBA OG', 'jpg/02.jpg')">Add to Cart</a>
+			<p class="card-text">VANS VAULT OG STYLE 36 LX</p>
+            <h5 class="card-title">2 176 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('VANS VAULT OG STYLE 36 LX', '../jpg/05.jpg')">Add to Cart</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card fade-in">
-          <img src="jpg/03.jpg" class="card-img-top" alt="Product 3">
+          <img src="../jpg/06.jpg" class="card-img-top" alt="Product 3">
           <div class="card-body">
-            <p class="card-text">NIKE AIR FORCE 1 LOW RETRO</p>
-			<h5 class="card-title">3 799 Kč</h5>
-            <a href="#" class="btn btn-primary" onclick="addToCart('NIKE AIR FORCE 1 LOW RETRO', 'jpg/03.jpg')">Add to Cart</a>
+            <p class="card-text">ASICS X ANDERSSON BELL GEL-SONOMA 15-50</p>
+			<h5 class="card-title">3 791 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('ASICS X ANDERSSON BELL GEL-SONOMA 15-50', '../jpg/06.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/07.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">ON M CLOUD 5 COAST</p>
+			<h5 class="card-title">4 290 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('ON M CLOUD 5 COAST', '../jpg/07.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/08.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">VANS VAULT AUTHENTIC VR3 PW LX</p>
+			<h5 class="card-title">2 176 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('VANS VAULT AUTHENTIC VR3 PW LX', '../jpg/08.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/09.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">VANS VAULT HALF CAB CP VR3 LX</p>
+			<h5 class="card-title">2 960 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('VANS VAULT HALF CAB CP VR3 LX', '../jpg/09.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/10.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">ADIDAS ADILETTE 22</p>
+			<h5 class="card-title">1 699 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('ADIDAS ADILETTE 22', '../jpg/10.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/11.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">VANS VAULT OG CLASSIC SLIP-ON LX</p>
+			<h5 class="card-title">1 500 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('VANS VAULT OG CLASSIC SLIP-ON LX', '../jpg/11.jpg')">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4 mb-4">
+        <div class="card fade-in">
+          <img src="../jpg/12.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <p class="card-text">COLUMBIA FLOW MORRISON™ OUTDRY™</p>
+			<h5 class="card-title">2 700 Kč</h5>
+            <a href="#" class="btn btn-primary" onclick="addToCart('COLUMBIA FLOW MORRISON™ OUTDRY™', '../jpg/12.jpg')">Add to Cart</a>
           </div>
         </div>
       </div>
